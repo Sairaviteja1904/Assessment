@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GitHub UI Test Suite" parallel="methods" thread-count="3">
+    
+    <parameter name="browser" value="chrome"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="timeout" value="30"/>
+    
+    <test name="Authentication Tests">
+        <classes>
+            <class name="tests.LoginTests"/>
+            <class name="tests.SignUpTests"/>
+        </classes>
+    </test>
+    
+    <test name="Repository Tests">
+        <classes>
+            <class name="tests.RepositoryTests"/>
+        </classes>
+    </test>
+    
+    <test name="Issue Management Tests">
+        <classes>
+            <class name="tests.IssueTests"/>
+        </classes>
+    </test>
+    
+    <test name="Pull Request Tests">
+        <classes>
+            <class name="tests.PullRequestTests"/>
+        </classes>
+    </test>
+    
+    <test name="Navigation Tests">
+        <classes>
+            <class name="tests.NavigationTests"/>
+        </classes>
+    </test>
+    
+</suite>

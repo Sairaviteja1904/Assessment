@@ -1,0 +1,35 @@
+# GitHub Testing Configuration Template
+
+# Base Configuration
+base.url=https://github.com
+
+# Test User Credentials (Update with your test account)
+test.username=your_github_username
+test.password=your_github_password
+test.email=your_test_email@example.com
+
+# Test Repository Configuration
+test.repository.name=test-automation-repo
+test.repository.description=Repository created for testing purposes
+
+# Timeouts (in seconds)
+implicit.wait=10
+explicit.wait=30
+page.load.timeout=30
+
+# Browser Configuration
+default.browser=chrome
+headless.mode=false
+
+# Test Data
+test.issue.title=Test Issue Title
+test.issue.description=This is a test issue created by automation
+test.pull.request.title=Test Pull Request
+test.pull.request.description=This is a test pull request created by automation
+
+# GitHub API Configuration (for API tests)
+github.api.base.url=https://api.github.com
+github.token=your_github_personal_access_token
+
+# Logging Configuration
+log.level=INFO
